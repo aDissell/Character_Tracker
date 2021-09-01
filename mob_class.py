@@ -36,7 +36,7 @@ class Mob:
     
     def my_chari(self):
         print("Cha : " + str(self.chari))
-    
+
     def show_stats(self):
         self.my_name()
         self.my_hp()

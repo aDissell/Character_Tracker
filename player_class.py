@@ -38,3 +38,14 @@ class Player(Mob):
             stat_list[8]
             )
         return new_player
+    
+    def show_players(players):
+        if not players:
+            print("No characters to display")
+        else:
+            for player in players:
+                player.my_name()
+            print('')
+
+    def modify_players():
+        pass
