@@ -1,4 +1,4 @@
-class Player_Object:
+class Mob:
     def __init__(self, name = "Default", hp = 10, ac = 10, stren = 10, dex = 10, con = 10, wis = 10, intel = 10, chari = 10):
         self.name = name
         self.hp = hp
