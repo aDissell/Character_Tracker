@@ -1,12 +1,13 @@
-from mob_class import Mob
+from character import Character
+from prompts import Prompts
 
 
-class Player(Mob):
+class Player(Character):
     players = list()
     def __init__(self, name, hp, ac, stren, dex, con, wis, intel, chari):
         super().__init__(name=name, hp=hp, ac=ac, stren=stren, dex=dex, con=con, wis=wis, intel=intel, chari=chari)
 
-    def add_new(new_in, players):
+    def player_create(new_in, players):
         '''Takes a set of attributes and builds a new player
             returns a filled player object'''
         # Checks to see if the user entered anything to the console
@@ -40,8 +41,9 @@ class Player(Mob):
         return new_player
     
     def show_players(players):
+        '''Shows the current list of players. If no players, says no players.'''
         if not players:
-            print("No characters to display")
+            Prompts.no_players()
         else:
             for player in players:
                 player.my_name()
