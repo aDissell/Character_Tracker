@@ -6,6 +6,8 @@ class Player(Mob):
         super().__init__(name=name, hp=hp, ac=ac, stren=stren, dex=dex, con=con, wis=wis, intel=intel, chari=chari)
 
     def add_new(new_in, players):
+        '''Takes a set of attributes and builds a new player
+            returns a filled player object'''
         # Checks to see if the user entered anything to the console
         # if not, sets the first item in the list to a default name
         if new_in == '':
