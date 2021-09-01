@@ -28,14 +28,37 @@ while running:
 
         #TODO: Add UPDATE functionality
         elif user_input == "UPDATE":
-            pass
+            Prompts.current_players()
+            Player.show_players(Player.players)
+            player_to_update = Player.players[Prompts.player_access()]
+            what_update = input("What would you like to modify about " + player_to_update.my_name() + "?").upper()
+            if what_update == "NAME":
+                pass
+            elif what_update == "HP":
+                pass
+            elif what_update == "AC":
+                pass
+            elif what_update == "STR":
+                pass
+            elif what_update == "DEX":
+                pass
+            elif what_update == "CON":
+                pass
+            elif what_update == "WIS":
+                pass
+            elif what_update == "INT":
+                pass
+            elif what_update == "CHA":
+                pass
+            else:
+                print("You did not update any attributes for " + player_to_update.my_name() + ".")
 
         # Deletes a player from the list of players
         elif user_input == "DELETE":
             Prompts.current_players()
             Player.show_players(Player.players)
             # Takes the index of the character the user wishes to delete
-            del Player.players[Prompts.player_delete()]
+            del Player.players[Prompts.player_access()]
         
         #TODO: Add ability to stop modifying player list
         elif user_input == "FINISH":

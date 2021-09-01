@@ -16,9 +16,9 @@ class Prompts:
         '''Lets user know that the new player has been added successfully'''
         return print("You have added " + player)
     
-    def player_delete():
-        '''Asks the user which player they would like to remove'''
-        return int(input("Enter the index of the player to remove : "))
+    def player_access():
+        '''Asks the user which player they would like to access'''
+        return int(input("Enter the index of the player to access : "))
     
     def current_players():
         '''Displays the current list of players'''

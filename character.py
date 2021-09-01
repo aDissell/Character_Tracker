@@ -11,6 +11,9 @@ class Character:
         self.chari = chari
 
     def my_name(self):
+        print(self.name)
+
+    def display_name(self):
         print("Name : " + self.name)
     
     def my_hp(self):
@@ -38,7 +41,7 @@ class Character:
         print("Cha : " + str(self.chari))
 
     def show_stats(self):
-        self.my_name()
+        self.display_name()
         self.my_hp()
         self.my_ac()
         self.my_stren()
