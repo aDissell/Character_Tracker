@@ -16,6 +16,10 @@ class Prompts:
         '''Lets user know that the new player has been added successfully'''
         return print("You have added " + player)
     
+    def player_update(player_name):
+        '''Asks what about the player the user would like to update'''
+        return input("What would you like to modify about " + player_name + "?").upper()
+    
     def player_access():
         '''Asks the user which player they would like to access'''
         return int(input("Enter the index of the player to access : "))

@@ -31,7 +31,7 @@ while running:
             Prompts.current_players()
             Player.show_players(Player.players)
             player_to_update = Player.players[Prompts.player_access()]
-            what_update = input("What would you like to modify about " + player_to_update.my_name() + "?").upper()
+            what_update = Prompts.player_update(player_to_update.my_name())
             if what_update == "NAME":
                 pass
             elif what_update == "HP":
